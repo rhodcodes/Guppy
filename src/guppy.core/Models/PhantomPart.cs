@@ -2,10 +2,10 @@
 {
     internal record PhantomPart : IPart
     {
-        public string Description { get; init; }
-        public string PartNumber { get; init; }
-        public string DrawingNumber { get; init; }
-        public string DrawingIssue { get; init; }
+        public string PartNumber { get; init; } = string.Empty;
+        public string Description { get; init; } = string.Empty;
+        public string? DrawingNumber { get; init; }
+        public string? DrawingIssue { get; init; }
 
         public override string ToString()
         {
